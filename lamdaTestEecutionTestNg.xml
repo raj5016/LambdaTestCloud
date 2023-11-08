@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  thread-count="2" parallel="tests">
+  <test name="ChromeTest">
+  	<parameter name="browserName" value="Chrome" ></parameter>
+  	<parameter name="browserVersion" value="120.0" ></parameter>
+  	<parameter name="osVersion" value="Windows 11" ></parameter>
+    <classes>
+      <class name="mandatoryHomeWork.seleniumPractise.salesForce.TC001_CreateLegalEntityParallel"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FireFoxTest">
+  	<parameter name="browserName" value="FireFox" ></parameter>
+  	<parameter name="browserVersion" value="119.0" ></parameter>
+  	<parameter name="osVersion" value="Windows 10" ></parameter>
+    <classes>
+      <class name="mandatoryHomeWork.seleniumPractise.salesForce.TC001_CreateLegalEntityParallel"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
